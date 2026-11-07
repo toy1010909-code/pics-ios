@@ -145,5 +145,14 @@ struct ContentView: View {
 
 @main
 struct PICSViewerApp: App {
-    var body: some Scene { WindowGroup { ContentView() } }
+    var body: some Scene {
+        WindowGroup {
+            TabView {
+                ContentView()
+                    .tabItem { Label("受信", systemImage: "dot.radiowaves.left.and.right") }
+                NearbyView()
+                    .tabItem { Label("近くの信号機", systemImage: "map") }
+            }
+        }
+    }
 }

@@ -13,6 +13,7 @@ targets:
       properties:
         CFBundleDisplayName: PICS Viewer
         NSBluetoothAlwaysUsageDescription: 信号機のBLE広告を受信するために使用します
+        NSLocationWhenInUseUsageDescription: 現在地の近くにある信号機を表示するために使用します
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
