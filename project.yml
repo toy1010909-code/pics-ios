@@ -1,0 +1,22 @@
+name: PICSViewer
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  PICSViewer:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: PICS Viewer
+        NSBluetoothAlwaysUsageDescription: 信号機のBLE広告を受信するために使用します
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.picsviewer
+        SWIFT_VERSION: "5.0"
